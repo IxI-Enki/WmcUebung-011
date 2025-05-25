@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 const pool = new Pool({
   user: 'postgres',
-  host: 'localhost',       
+  host: 'localhost',
   database: 'postgres',
   port: 5432,
   password: 'secret'
