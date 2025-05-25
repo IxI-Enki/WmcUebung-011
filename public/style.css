@@ -1,0 +1,155 @@
+/* Grundlegendes Layout und Schriftart */
+body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #121212;
+      color: #e0e0e0;
+}
+
+/* Abstand unter Formular und Tabelle */
+form, table {
+      margin-bottom: 20px;
+}
+
+/* Tabelle ohne doppelte Rahmen, volle Breite */
+table {
+      border-collapse: collapse;
+      width: 100%;
+      background: #1e1e1e;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+}
+
+/* Zellen mit Rahmen und Innenabstand */
+td, th {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+}
+
+/* Eingabefelder mit fester Breite und Abstand */
+input[type="text"], input[type="email"], input[type="date"] {
+      width: 200px;
+      margin-right: 5px;
+      background: #333;
+      color: #e0e0e0;
+      border: 1px solid #555;
+}
+
+/* Überschriften zentrieren und optisch hervorheben */
+h1, h2 {
+      text-align: center;
+      color: #bb86fc;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Formular optisch hervorheben */
+form {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+}
+
+      form input, form button {
+            border-radius: 4px;
+            border: 1px solid #555;
+            padding: 8px 12px;
+            font-size: 1em;
+            background: #333;
+            color: #e0e0e0;
+      }
+
+      form button {
+            background: #bb86fc;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+      }
+
+            form button:hover {
+                  background: #3700b3;
+            }
+
+/* Suchleiste und Buttons mittig ausrichten */
+.search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 25px;
+}
+
+#searchInput {
+      width: 250px;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #555;
+      background: #333;
+      color: #e0e0e0;
+}
+
+button[onclick] {
+      border-radius: 4px;
+      border: 1px solid #bb86fc;
+      background: #bb86fc;
+      color: #000;
+      padding: 8px 16px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+}
+
+      button[onclick]:hover {
+            background: #3700b3;
+      }
+
+/* Tabelle optisch verbessern */
+table {
+      border-collapse: collapse;
+      width: 100%;
+      background: #1e1e1e;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+}
+
+th {
+      background: #bb86fc;
+      color: #000;
+      font-weight: 600;
+}
+
+td, th {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+}
+
+tr:nth-child(even) {
+      background: #2d2d2d;
+}
+
+/* Hauptüberschrift farbig und modern gestalten */
+.main-title {
+      text-align: center;
+      font-size: 2.8em;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #fff;
+      background: linear-gradient(90deg, #bb86fc 0%, #3700b3 100%);
+      padding: 20px 0 18px 0;
+      border-radius: 12px;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+}

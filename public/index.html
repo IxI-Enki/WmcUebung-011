@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Management</title>
+  <!-- Einbinden der CSS-Datei für das Styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Schöne, farbige Hauptüberschrift -->
+  <h1 class="main-title">Employee Management</h1>
+  
+  <h2>Mitarbeiter eingeben</h2>
+  <!-- Formular zur Eingabe eines neuen Mitarbeiters -->
+  <form id="employeeForm">
+    <input type="text" name="firstname" placeholder="Vorname" required />
+    <input type="text" name="lastname" placeholder="Nachname" required />
+    <input type="email" name="email" placeholder="E-Mail" required />
+    <input type="text" name="position" placeholder="Position" />
+    <input type="date" name="hired_date" placeholder="Einstellungsdatum" />
+    <button type="submit">Speichern</button>
+  </form>
+
+  <h2>Mitarbeitersuche</h2>
+  <!-- Suchfeld für Mitarbeiter, jetzt mittig mit .search-bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Suchen..." />
+    <button onclick="loadEmployees()">Suchen</button>
+    <button onclick="showAll()">Gesamte Liste</button>
+  </div>
+
+  <h2>Mitarbeiterliste</h2>
+  <!-- Tabelle zur Anzeige der Mitarbeiterdaten -->
+  <table>
+    <thead>
+      <tr>
+        <th>Vorname</th><th>Nachname</th><th>E-Mail</th><th>Position</th><th>Eingestellt</th><th>Aktiv</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTable"></tbody>
+  </table>
+
+  <!-- Einbinden der JavaScript-Datei für die Logik -->
+  <script src="script.js" defer></script>
+</body>
+</html>
