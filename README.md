@@ -6,6 +6,8 @@
 Dieses Projekt entstand im Kontext der WMC-Aufgabe.
 Das Ziel bestand darin, ein Express-Projekt zu entwickeln, das mit einer MSSQL-Datenbank interagiert, um Mitarbeiterdaten zu verwalten.
 
+<img src="img/express-example.png">
+
 ### Funktionen
 
 - Verbindung zu einer MSSQL-Datenbank
@@ -34,4 +36,9 @@ Das Ziel bestand darin, ein Express-Projekt zu entwickeln, das mit einer MSSQL-D
   - API-Endpunkte
     - GET /api/employees: Ruft eine Liste aller Mitarbeiter ab. Optionale Abfrageparameter: active und search.
     - POST /api/employees: Fügt einen neuen Mitarbeiter hinzu. Erwartet einen JSON-Body mit den Mitarbeiterdetails.
+
+<img src="img/server-mssql.png">
+
+---
+<img src="img/database-creation.png">
 
